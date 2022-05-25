@@ -1,4 +1,4 @@
-# jp-actor
+# 個人專題
 
 ## Project setup
 ```

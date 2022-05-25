@@ -1,8 +1,6 @@
 <template>
-    <div class="text-center" style="margin-top: 100px;">
-        <div class="title-underline mx-auto">
-            <h3 class="eng-font my-1">Sign Up</h3>
-        </div>
+    <div class="text-center container-fluid" style="margin-top: 100px;">
+        <h3 class="eng-font my-1 text-decoration-underline">Sign Up</h3>
         <form action="" class="my-5">
             <label for="" class="eng-font">Name</label>
             <br>
@@ -12,17 +10,17 @@
             <br>
             <input type="text" class="p-2 m-2" v-model="email">
             <br>
-            <label for="" class="eng-font" >Password</label>
+            <label for="" class="eng-font">Password</label>
             <br>
-            <input type="text" class="p-2 m-2" v-model="password">
+            <input type="password" class="p-2 m-2" v-model="password">
             <br>
-            <button class="contact-btn m-3" @click.prevent="doSignUp">Sign Up</button>
+            <button class="submit-btn m-3" @click.prevent="doSignUp">Sign Up</button>
         </form>
     </div>
 </template>
 
 <script>
-export default{
+export default {
     data() {
         return {
             displayName: '',
@@ -30,16 +28,18 @@ export default{
             password: ''
         }
     },
-    methods:{
-        doSignUp(){
+    methods: {
+        doSignUp() {
             console.log(this.axios)
             const submitForm = {
-                displayName:this.displayName,
-                email:this.email,
-                password:this.password
-            } 
-            this.axios.post('/signup',submitForm).then((response) => {
+                displayName: this.displayName,
+                email: this.email,
+                password: this.password
+            }
+            this.axios.post('/signup', submitForm).then((response) => {
                 console.log(response)
+                this.$router.push('/login')
+                //TODO:導頁
             })
         }
     }
@@ -47,6 +47,12 @@ export default{
 
 </script>
 
-<style>
+<style scoped>
+input{
+    width: 60%;
+    border: none;
+    background-color: #fff;
+    height: 50px;
+}
 
 </style>

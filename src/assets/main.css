@@ -2,7 +2,7 @@
 
 * {
     /* outline: solid 1px #000; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -40,6 +40,12 @@ nav{
     background-color: #F0F0F0;
 }
 
+input{
+    border: none;
+    background-color: #fff;
+    height: 50px;
+}
+
 /* fonts */
 .eng-font{
     font-family: 'Josefin Sans', sans-serif;
@@ -57,13 +63,6 @@ nav{
     color: #4C4948
 }
 
-input{
-    border: none;
-    background-color: #fff;
-    width: 500px;
-    height: 50px;
-}
-
 footer {
     background-color: #4C4948;
 }
@@ -78,6 +77,20 @@ footer {
 }
 
 .footer-btn:hover {
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.submit-btn {
+    border: none;
+    background-color: #4C4948;
+    padding: 0.5rem 5rem;
+    color: #fff;
+    transition: .5s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.submit-btn:hover {
     border-radius: 10px;
     transition: .5s;
 }

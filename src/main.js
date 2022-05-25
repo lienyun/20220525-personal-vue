@@ -9,3 +9,4 @@ import VueAxios from 'vue-axios'
 
 createApp(App).use(router).use(VueAxios, axios).mount('#app')
 
+//.use(VueAxios, axios)掛載

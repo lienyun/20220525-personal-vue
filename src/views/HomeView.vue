@@ -11,7 +11,7 @@
         </div>
         <div class="row justify-content-evenly align-items-center my-5">
             <div class="col-md-6">
-                <p>Drama Note 成立於2020年1月，累績至今已有<span class="highlight-span py-1 fw-bold">1.3萬粉絲</span>。
+                <p>Drama Note 成立於2020年1月，累績至今已有<span class="highlight-span py-1 fw-bold">1.4萬粉絲</span>。
                 </p>
                 <p>粉專題材主要是日本文化、日本娛樂、日文學習相關，影劇方面則多方涉獵，舉凡美劇、韓劇、台劇、電影都有觀賞。</p>
                 <p>
@@ -28,7 +28,7 @@
     <div class="container menu-section py-5 my-5">
         <h2 class="text-center p-3 text-decoration-underline">MENU</h2>
         <div class="menu-img mx-3"></div>
-        <h3 class="text-center py-5 text-decoration-underline">SERVICE</h3>
+        <h3 id="service" class="text-center py-5 text-decoration-underline">SERVICE</h3>
 
 
         <div class="row mx-3">

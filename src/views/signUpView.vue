@@ -4,15 +4,15 @@
         <form action="" class="my-5">
             <label for="" class="eng-font">Name</label>
             <br>
-            <input type="text" class="p-2 m-2" v-model="displayName">
+            <input type="text" class="p-2 m-2" v-model="displayName" required>
             <br>
             <label for="" class="eng-font">Email</label>
             <br>
-            <input type="text" class="p-2 m-2" v-model="email">
+            <input type="text" class="p-2 m-2" v-model="email" required>
             <br>
             <label for="" class="eng-font">Password</label>
             <br>
-            <input type="password" class="p-2 m-2" v-model="password">
+            <input type="password" class="p-2 m-2" v-model="password" required>
             <br>
             <button class="submit-btn m-3" @click.prevent="doSignUp">Sign Up</button>
         </form>
